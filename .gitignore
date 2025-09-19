@@ -1,0 +1,65 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# Rider settings
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nupkg
+packages/
+*.snupkg
+.nuget/
+
+# Secrets
+secrets.json
+
+# App config (optional: only ignore if you're using sensitive data inside)
+appsettings.Development.json
+appsettings.Production.json
+appsettings.json
+
+# Test results
+TestResults/
+*.trx
+
+# Entity Framework
+Migrations/
+
+# JetBrains Rider
+*.DotSettings.user
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings
+
+# Coverage & Analysis
+coverage/
+*.coverage
+*.coveragexml
+*.codecoverage

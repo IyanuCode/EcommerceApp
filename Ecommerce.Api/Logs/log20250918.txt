@@ -1,0 +1,227 @@
+2025-09-18 07:28:37.258 +01:00 [INF] User profile is available. Using 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-18 07:28:37.424 +01:00 [INF] Creating key {90c69708-f1c5-4d32-bf3c-b9363929b0bf} with creation date 2025-09-18 06:28:37Z, activation date 2025-09-18 06:28:37Z, and expiration date 2025-12-17 06:28:37Z.
+2025-09-18 07:28:37.500 +01:00 [INF] Writing data to file 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys\key-90c69708-f1c5-4d32-bf3c-b9363929b0bf.xml'.
+2025-09-18 07:28:37.818 +01:00 [INF] Now listening on: http://localhost:5239
+2025-09-18 07:28:37.826 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 07:28:37.830 +01:00 [INF] Hosting environment: Development
+2025-09-18 07:28:37.834 +01:00 [INF] Content root path: C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api
+2025-09-18 07:28:56.970 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 07:28:57.083 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-09-18 07:28:57.207 +01:00 [ERR] An error occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions Options) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\Program.cs:line 66
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ecommerce.Api.MiddleWares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\MiddleWares\ErrorHandlingMiddleware.cs:line 19
+2025-09-18 07:28:58.045 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 500 null application/json; charset=utf-8 1072.2999ms
+2025-09-18 07:32:30.168 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 07:32:30.183 +01:00 [ERR] An error occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions Options) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\Program.cs:line 66
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ecommerce.Api.MiddleWares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\MiddleWares\ErrorHandlingMiddleware.cs:line 19
+2025-09-18 07:32:30.204 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 500 null application/json; charset=utf-8 34.3111ms
+2025-09-18 08:50:45.415 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 08:50:45.424 +01:00 [ERR] An error occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions Options) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\Program.cs:line 66
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ecommerce.Api.MiddleWares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\MiddleWares\ErrorHandlingMiddleware.cs:line 19
+2025-09-18 08:50:45.437 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 500 null application/json; charset=utf-8 21.5175ms
+2025-09-18 16:29:45.086 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 16:29:45.099 +01:00 [ERR] An error occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions Options) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\Program.cs:line 66
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ecommerce.Api.MiddleWares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\MiddleWares\ErrorHandlingMiddleware.cs:line 19
+2025-09-18 16:29:45.192 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 500 null application/json; charset=utf-8 106.7898ms
+2025-09-18 16:32:11.295 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 16:32:11.308 +01:00 [ERR] An error occurred.
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions Options) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\Program.cs:line 66
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Ecommerce.Api.MiddleWares.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api\MiddleWares\ErrorHandlingMiddleware.cs:line 19
+2025-09-18 16:32:11.328 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 500 null application/json; charset=utf-8 33.4156ms
+2025-09-18 16:32:46.483 +01:00 [INF] Application is shutting down...
+2025-09-18 16:33:40.009 +01:00 [INF] User profile is available. Using 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-18 16:33:40.291 +01:00 [INF] Now listening on: http://localhost:5239
+2025-09-18 16:33:40.297 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 16:33:40.300 +01:00 [INF] Hosting environment: Development
+2025-09-18 16:33:40.302 +01:00 [INF] Content root path: C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api
+2025-09-18 16:34:05.592 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - application/json 76
+2025-09-18 16:34:06.938 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-09-18 16:34:07.340 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/EcommerceStore - 404 0 null 1759.3371ms
+2025-09-18 16:34:07.503 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5239/api/EcommerceStore, Response status code: 404
+2025-09-18 16:34:46.828 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/EcommerceStore - application/json 100
+2025-09-18 16:34:46.843 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/EcommerceStore - 404 0 null 15.7048ms
+2025-09-18 16:34:46.906 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5239/api/EcommerceStore, Response status code: 404
+2025-09-18 16:35:12.144 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/index.html - null null
+2025-09-18 16:35:13.508 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/index.html - 200 null text/html;charset=utf-8 1363.9674ms
+2025-09-18 16:35:14.424 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - null null
+2025-09-18 16:35:15.132 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 706.7573ms
+2025-09-18 16:35:38.588 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - null null
+2025-09-18 16:35:39.576 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api)'
+2025-09-18 16:35:39.776 +01:00 [INF] Route matched with {action = "GetAllItem", controller = "EcommerceStore"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto]]] GetAllItem(Int32, Int32, System.String) on controller Ecommerce.Api.Controllers.EcommerceStoreController (Ecommerce.Api).
+2025-09-18 16:35:58.087 +01:00 [INF] Executed DbCommand (209ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Category", e."Orders", e."Product"
+FROM "EcommerceStores" AS e
+2025-09-18 16:36:01.369 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto, Ecommerce.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-18 16:36:02.551 +01:00 [INF] Executed action Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api) in 22734.8925ms
+2025-09-18 16:36:02.567 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api)'
+2025-09-18 16:36:02.625 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - 200 null application/json; charset=utf-8 24037.3001ms
+2025-09-18 16:37:03.378 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/v1/EcommerceStore - application/json 74
+2025-09-18 16:37:03.468 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api)'
+2025-09-18 16:37:03.715 +01:00 [INF] Route matched with {action = "CreateGoods", controller = "EcommerceStore"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto]] CreateGoods(Ecommerce.Api.DTOs.EcommerceStore.CreateEcommerceStoreDto) on controller Ecommerce.Api.Controllers.EcommerceStoreController (Ecommerce.Api).
+2025-09-18 16:37:06.181 +01:00 [INF] Executed DbCommand (201ms) [Parameters=[@p0='?', @p1='?', @p2='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "EcommerceStores" ("Category", "Orders", "Product")
+VALUES (@p0, @p1, @p2)
+RETURNING "Id";
+2025-09-18 16:37:06.323 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto'.
+2025-09-18 16:37:07.604 +01:00 [INF] Executed action Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api) in 3870.5055ms
+2025-09-18 16:37:07.616 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api)'
+2025-09-18 16:37:07.628 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/v1/EcommerceStore - 201 null application/json; charset=utf-8 4249.652ms
+2025-09-18 16:38:03.841 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - application/json 100
+2025-09-18 16:38:03.852 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api)'
+2025-09-18 16:38:03.857 +01:00 [INF] Route matched with {action = "GetAllItem", controller = "EcommerceStore"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto]]] GetAllItem(Int32, Int32, System.String) on controller Ecommerce.Api.Controllers.EcommerceStoreController (Ecommerce.Api).
+2025-09-18 16:38:04.078 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT e."Id", e."Category", e."Orders", e."Product"
+FROM "EcommerceStores" AS e
+2025-09-18 16:38:04.099 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto, Ecommerce.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-18 16:38:04.112 +01:00 [INF] Executed action Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api) in 243.6945ms
+2025-09-18 16:38:04.124 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.GetAllItem (Ecommerce.Api)'
+2025-09-18 16:38:04.134 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - 200 null application/json; charset=utf-8 292.698ms
+2025-09-18 16:38:34.824 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/v1/EcommerceStore - application/json 1774
+2025-09-18 16:38:34.836 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api)'
+2025-09-18 16:38:34.840 +01:00 [INF] Route matched with {action = "CreateGoods", controller = "EcommerceStore"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Ecommerce.Api.DTOs.EcommerceStore.ReadEcommerceStoreDto]] CreateGoods(Ecommerce.Api.DTOs.EcommerceStore.CreateEcommerceStoreDto) on controller Ecommerce.Api.Controllers.EcommerceStoreController (Ecommerce.Api).
+2025-09-18 16:38:34.876 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-09-18 16:38:35.748 +01:00 [INF] Executed action Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api) in 898.7072ms
+2025-09-18 16:38:35.759 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.EcommerceStoreController.CreateGoods (Ecommerce.Api)'
+2025-09-18 16:38:35.771 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/v1/EcommerceStore - 400 null application/problem+json; charset=utf-8 945.4865ms
+2025-09-18 16:39:24.011 +01:00 [INF] Application is shutting down...
+2025-09-18 16:39:39.210 +01:00 [INF] User profile is available. Using 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-18 16:39:39.437 +01:00 [INF] Now listening on: http://localhost:5239
+2025-09-18 16:39:39.445 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 16:39:39.449 +01:00 [INF] Hosting environment: Development
+2025-09-18 16:39:39.451 +01:00 [INF] Content root path: C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api
+2025-09-18 16:40:04.700 +01:00 [INF] Application is shutting down...
+2025-09-18 16:40:21.636 +01:00 [INF] User profile is available. Using 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-18 16:40:21.826 +01:00 [INF] Now listening on: http://localhost:5239
+2025-09-18 16:40:21.833 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-18 16:40:21.836 +01:00 [INF] Hosting environment: Development
+2025-09-18 16:40:21.839 +01:00 [INF] Content root path: C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api
+2025-09-18 16:40:38.028 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - application/json null
+2025-09-18 16:40:38.150 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-09-18 16:40:38.232 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:40:38.246 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:40:38.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - 401 0 null 235.7671ms
+2025-09-18 16:41:28.221 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - application/json null
+2025-09-18 16:41:29.880 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/27/2024 3:33:20 AM', Current time (UTC): '9/18/2025 3:41:29 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-18 16:41:29.922 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/27/2024 3:33:20 AM', Current time (UTC): '9/18/2025 3:41:29 PM'.
+2025-09-18 16:41:29.937 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:41:29.946 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:41:29.953 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - 401 0 null 1731.6642ms
+2025-09-18 16:41:59.922 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - application/json null
+2025-09-18 16:41:59.938 +01:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/27/2024 3:33:20 AM', Current time (UTC): '9/18/2025 3:41:59 PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-18 16:41:59.947 +01:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '10/27/2024 3:33:20 AM', Current time (UTC): '9/18/2025 3:41:59 PM'.
+2025-09-18 16:41:59.955 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:41:59.961 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:41:59.966 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore - 401 0 null 44.4075ms
+2025-09-18 16:42:06.086 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/index.html - null null
+2025-09-18 16:42:07.090 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/index.html - 200 null text/html;charset=utf-8 1004.276ms
+2025-09-18 16:42:07.956 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - null null
+2025-09-18 16:42:08.378 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 421.1659ms
+2025-09-18 16:42:30.913 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - null null
+2025-09-18 16:42:30.926 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:42:30.931 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:42:30.935 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - 401 0 null 21.699ms
+2025-09-18 16:42:43.708 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - null null
+2025-09-18 16:42:43.719 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:42:43.726 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:42:43.733 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - 401 0 null 24.2591ms
+2025-09-18 16:42:44.633 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - null null
+2025-09-18 16:42:44.917 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-18 16:42:44.931 +01:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-18 16:42:44.946 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/api/v1/EcommerceStore?pageNumber=1&pageSize=10&sortBy=Product - 401 0 null 311.0072ms

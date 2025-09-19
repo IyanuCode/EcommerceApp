@@ -1,0 +1,30 @@
+2025-09-19 08:31:39.905 +01:00 [INF] Application is shutting down...
+2025-09-19 08:32:14.162 +01:00 [INF] User profile is available. Using 'C:\Users\Iyanu\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-19 08:32:17.215 +01:00 [INF] Now listening on: http://localhost:5239
+2025-09-19 08:32:17.238 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-19 08:32:17.247 +01:00 [INF] Hosting environment: Development
+2025-09-19 08:32:17.257 +01:00 [INF] Content root path: C:\Users\Iyanu\ApiProject\EcommerceApp\Ecommerce.api
+2025-09-19 08:34:37.514 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/index.html - null null
+2025-09-19 08:34:38.880 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/index.html - 200 null text/html;charset=utf-8 1368.8053ms
+2025-09-19 08:34:40.798 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - null null
+2025-09-19 08:34:41.457 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5239/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 662.2843ms
+2025-09-19 08:35:15.491 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/Auth/login - application/json 47
+2025-09-19 08:35:15.733 +01:00 [INF] CORS policy execution failed.
+2025-09-19 08:35:15.741 +01:00 [INF] Request origin http://localhost:5239 does not have permission to access the resource.
+2025-09-19 08:35:15.934 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-09-19 08:35:16.376 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api)'
+2025-09-19 08:35:16.510 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Ecommerce.Api.DTOs.AuthDto.LoginRequestDto) on controller Ecommerce.Api.Controllers.AuthController (Ecommerce.Api).
+2025-09-19 08:35:17.080 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-19 08:35:17.631 +01:00 [INF] Executed action Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api) in 1084.4957ms
+2025-09-19 08:35:17.644 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api)'
+2025-09-19 08:35:17.655 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/Auth/login - 200 null application/json; charset=utf-8 2163.7142ms
+2025-09-19 08:41:09.796 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/v1/Auth - application/json 51
+2025-09-19 08:41:09.822 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/v1/Auth - 404 0 null 26.7632ms
+2025-09-19 08:41:10.550 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://localhost:5239/api/v1/Auth, Response status code: 404
+2025-09-19 08:41:56.833 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5239/api/Auth/login - application/json 51
+2025-09-19 08:41:56.853 +01:00 [INF] Executing endpoint 'Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api)'
+2025-09-19 08:41:56.859 +01:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Ecommerce.Api.DTOs.AuthDto.LoginRequestDto) on controller Ecommerce.Api.Controllers.AuthController (Ecommerce.Api).
+2025-09-19 08:41:56.872 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-19 08:41:56.880 +01:00 [INF] Executed action Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api) in 13.2554ms
+2025-09-19 08:41:56.888 +01:00 [INF] Executed endpoint 'Ecommerce.Api.Controllers.AuthController.Login (Ecommerce.Api)'
+2025-09-19 08:41:56.893 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5239/api/Auth/login - 200 null application/json; charset=utf-8 60.4016ms
