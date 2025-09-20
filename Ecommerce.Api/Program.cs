@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Ecommerce.Data.Interfaces.IAuthServices;
+using Ecommerce.Data.Repositories.AuthService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,12 +24,12 @@ builder.Host.UseSerilog(); // Use Serilog as the logging provider
 
 //1---------------------------Registering DbContext ------------------------
 builder.Services.AddDbContext<EcommerceStoreDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 //2---------------------------Registering AutoMapper ------------------------
 builder.Services.AddAutoMapper(typeof(Program));
 
 //3---------------------------Registering Repository ------------------------
 builder.Services.AddScoped<Ecommerce.Data.Interfaces.IEcommerceStoreRepository, Ecommerce.Data.Repositories.EcommerceStoreRepository>();
+builder.Services.AddScoped<IAuthServiceRepository, AuthServiceRepository>();
 
 //4---------------------------Registering FluentValidator ------------------------
 builder.Services.AddValidatorsFromAssemblyContaining<CreateEcommerceStoreDtoValidator>();
@@ -61,7 +63,12 @@ builder.Services.AddApiVersioning(options =>
 builder.Services.AddAuthentication("Bearer")
     //b.Configure how JWT Bearer tokens should be validated when they come in.
     .AddJwtBearer(Options =>
-    {
+    {   
+          var secretKey = builder.Configuration["JwtSettings:SecretKey"];
+        if (string.IsNullOrEmpty(secretKey))
+            throw new Exception("JWT SecretKey is missing in configuration");
+
+
         //c. Define validation rules for incoming JWT tokens
         Options.TokenValidationParameters = new()
         {
@@ -78,9 +85,9 @@ builder.Services.AddAuthentication("Bearer")
             // i. “Only accept tokens that were issued for this API (the audience we set in config).”
             ValidAudience = builder.Configuration["JwtSettings:Audience"],
             // j. The key used to verify the token's signature (must match what was used to create the token).
+            
             IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"]))
-
+                Encoding.UTF8.GetBytes(secretKey))
         };
     });
 
@@ -90,7 +97,7 @@ builder.Services.AddCors(options =>
 {
     //b. Define a CORS policy named "AllowFrontend"
     options.AddPolicy("AllowFrontend", policy => policy
-    .WithOrigins("http://localhost:4200")     //c. Only allow requests from this origin ("http://localhost:4200")
+    .WithOrigins("http://localhost:5239")     //c. Only allow requests from this origin ("http://localhost:4200")
     .AllowAnyHeader()                         //d. Allow any HTTP headers in the request
     .AllowAnyMethod()                         //e. Allow any HTTP method (GET, POST, PUT, DELETE, OPTIONS, etc.)
     );

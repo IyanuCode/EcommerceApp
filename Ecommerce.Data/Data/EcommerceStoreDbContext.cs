@@ -1,4 +1,5 @@
 using Ecommerce.Data.Models;
+using Ecommerce.Data.Models.Auth;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Data.Data
@@ -15,6 +16,8 @@ namespace Ecommerce.Data.Data
         //EcommerceStores is the table for Ecommerce entities
         //"=null!;" syntax is a null-forgiving operator that tells the compiler not to worry even though the table is empty at compile time, it will be populated later.
 
-        public DbSet<EcommerceStore> EcommerceStores { get; set; } = null!;        
+        public DbSet<EcommerceStore> EcommerceStores { get; set; } = null!;
+        public DbSet<User> Users { get; set; } = null!;
+        public DbSet<RefreshToken> RefreshTokens { get; set; } = null!;    
     }
 }
